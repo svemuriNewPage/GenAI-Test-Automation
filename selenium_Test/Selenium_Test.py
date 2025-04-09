@@ -1,0 +1,50 @@
+import unittest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+LOG_FILE = "/Users/saisiddharthvemuri/Desktop/selenium_Test/test_log.txt"
+
+class PfizerWebsiteTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.driver = webdriver.Chrome()
+        cls.driver.get("http://127.0.0.1:5500/pfizerForAll.html")
+        time.sleep(2)
+
+    def test_elements_exist(self):
+        test_cases = {
+            "search_box": (By.CLASS_NAME, "header__search"),
+            "menu_links": (By.CLASS_NAME, "nav-link"),
+            "contact_us": (By.LINK_TEXT, "Contact Us")
+        }
+
+        with open(LOG_FILE, "w") as log_file:
+            for element_name, locator in test_cases.items():
+                try:
+                    element = self.driver.find_element(*locator)
+                    log_file.write(f"Found {element_name}: {locator}\n")
+                    print(f"Found {element_name}: {locator}\n")
+
+                    if element_name in ["username_field", "search_box"]:
+                        element.send_keys("testuser")
+                    elif element_name == "password_field":
+                        element.send_keys("testpassword")
+                    elif element_name in ["login_button", "submit_button", "contact_us"]:
+                        element.click()
+                    elif element_name == "menu_links":
+                        links = self.driver.find_elements(By.CLASS_NAME, "nav-link")
+                        for link in links[:3]:  # Click first 3 links
+                            link.click()
+                            time.sleep(1)
+
+                except Exception as e:
+                    log_file.write(f"Error: Element {element_name} not found - {locator}\nException: {e}\n")
+                    print(f"Error: Element {element_name} not found - {locator}\nException: {e}\n")
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.quit()
+
+if __name__ == "__main__":
+    unittest.main()

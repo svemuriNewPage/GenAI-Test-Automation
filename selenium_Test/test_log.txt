@@ -1,0 +1,63 @@
+Error: Element search_box not found - ('class name', 'header__search')
+Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".header__search"}
+  (Session info: chrome=135.0.7049.42); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000102f7d804 cxxbridge1$str$ptr + 2785964
+1   chromedriver                        0x0000000102f75ddc cxxbridge1$str$ptr + 2754692
+2   chromedriver                        0x0000000102ac9ea8 cxxbridge1$string$len + 92928
+3   chromedriver                        0x0000000102b111d0 cxxbridge1$string$len + 384552
+4   chromedriver                        0x0000000102b52678 cxxbridge1$string$len + 651984
+5   chromedriver                        0x0000000102b0535c cxxbridge1$string$len + 335796
+6   chromedriver                        0x0000000102f42cd4 cxxbridge1$str$ptr + 2545532
+7   chromedriver                        0x0000000102f45fa0 cxxbridge1$str$ptr + 2558536
+8   chromedriver                        0x0000000102f22d04 cxxbridge1$str$ptr + 2414508
+9   chromedriver                        0x0000000102f46800 cxxbridge1$str$ptr + 2560680
+10  chromedriver                        0x0000000102f13ba0 cxxbridge1$str$ptr + 2352712
+11  chromedriver                        0x0000000102f6645c cxxbridge1$str$ptr + 2690820
+12  chromedriver                        0x0000000102f665e4 cxxbridge1$str$ptr + 2691212
+13  chromedriver                        0x0000000102f75a50 cxxbridge1$str$ptr + 2753784
+14  libsystem_pthread.dylib             0x000000018bba42e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000018bb9f0fc thread_start + 8
+
+Error: Element menu_links not found - ('class name', 'nav-link')
+Exception: Message: no such element: Unable to locate element: {"method":"css selector","selector":".nav-link"}
+  (Session info: chrome=135.0.7049.42); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000102f7d804 cxxbridge1$str$ptr + 2785964
+1   chromedriver                        0x0000000102f75ddc cxxbridge1$str$ptr + 2754692
+2   chromedriver                        0x0000000102ac9ea8 cxxbridge1$string$len + 92928
+3   chromedriver                        0x0000000102b111d0 cxxbridge1$string$len + 384552
+4   chromedriver                        0x0000000102b52678 cxxbridge1$string$len + 651984
+5   chromedriver                        0x0000000102b0535c cxxbridge1$string$len + 335796
+6   chromedriver                        0x0000000102f42cd4 cxxbridge1$str$ptr + 2545532
+7   chromedriver                        0x0000000102f45fa0 cxxbridge1$str$ptr + 2558536
+8   chromedriver                        0x0000000102f22d04 cxxbridge1$str$ptr + 2414508
+9   chromedriver                        0x0000000102f46800 cxxbridge1$str$ptr + 2560680
+10  chromedriver                        0x0000000102f13ba0 cxxbridge1$str$ptr + 2352712
+11  chromedriver                        0x0000000102f6645c cxxbridge1$str$ptr + 2690820
+12  chromedriver                        0x0000000102f665e4 cxxbridge1$str$ptr + 2691212
+13  chromedriver                        0x0000000102f75a50 cxxbridge1$str$ptr + 2753784
+14  libsystem_pthread.dylib             0x000000018bba42e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000018bb9f0fc thread_start + 8
+
+Error: Element contact_us not found - ('link text', 'Contact Us')
+Exception: Message: no such element: Unable to locate element: {"method":"link text","selector":"Contact Us"}
+  (Session info: chrome=135.0.7049.42); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000102f7d804 cxxbridge1$str$ptr + 2785964
+1   chromedriver                        0x0000000102f75ddc cxxbridge1$str$ptr + 2754692
+2   chromedriver                        0x0000000102ac9ea8 cxxbridge1$string$len + 92928
+3   chromedriver                        0x0000000102b111d0 cxxbridge1$string$len + 384552
+4   chromedriver                        0x0000000102b52678 cxxbridge1$string$len + 651984
+5   chromedriver                        0x0000000102b0535c cxxbridge1$string$len + 335796
+6   chromedriver                        0x0000000102f42cd4 cxxbridge1$str$ptr + 2545532
+7   chromedriver                        0x0000000102f45fa0 cxxbridge1$str$ptr + 2558536
+8   chromedriver                        0x0000000102f22d04 cxxbridge1$str$ptr + 2414508
+9   chromedriver                        0x0000000102f46800 cxxbridge1$str$ptr + 2560680
+10  chromedriver                        0x0000000102f13ba0 cxxbridge1$str$ptr + 2352712
+11  chromedriver                        0x0000000102f6645c cxxbridge1$str$ptr + 2690820
+12  chromedriver                        0x0000000102f665e4 cxxbridge1$str$ptr + 2691212
+13  chromedriver                        0x0000000102f75a50 cxxbridge1$str$ptr + 2753784
+14  libsystem_pthread.dylib             0x000000018bba42e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000018bb9f0fc thread_start + 8
+
